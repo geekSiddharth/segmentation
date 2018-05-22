@@ -15,7 +15,7 @@ model = evaluate.load_model()
 
 
 def treat_text(raw_text):
-    sentences = split_sentences(raw_text)
+    sentences = split_sentences(raw_text,123)
     print(sentences)
 
     cutoffs = evaluate.predict_cutoffs(sentences, model, word2vec)
